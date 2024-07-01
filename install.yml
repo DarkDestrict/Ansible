@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  tasks:
+
+  - name: nginx  installations of packages
+    tags: nginx, inst_nginx
+    apt:
+      name: nginx
+      state: latest
